@@ -1,0 +1,87 @@
+### Register User
+POST http://localhost:9090/register
+Content-Type: application/json
+
+{
+  "username": "rahul",
+  "password": "123456",
+  "email": "r@gmail.com",
+  "name": "rahul"
+}
+
+###
+
+### Login User
+POST http://localhost:9090/login
+Content-Type: application/json
+
+{
+  "email": "r@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Get User Profile
+GET http://localhost:9090/get_user_and_profile
+Content-Type: application/json
+
+{
+"token":  "17880a8d17c4eef446b4f592bc4698ee531cab07a11c59a3d704cf281428b49f"
+}
+
+###
+
+### Update User Profile
+POST http://localhost:9090/user_update
+Content-Type: application/json
+
+{
+  "token":
+  "bio": "Full Stack Developer",
+  "currentPost": "Intern at Oasis Infobyte"
+}
+
+
+
+###
+
+### Update Profile Data
+POST http://localhost:9090/update_profile_data
+Content-Type: application/json
+
+{
+   "token": "17880a8d17c4eef446b4f592bc4698ee531cab07a11c59a3d704cf281428b49f",
+   "bio": "Full Stack Developer | MERN • SQL • JavaScript • Open Source Enthusiast",
+   "currentPost": "Full Stack Developer Intern at Oasis Infobyte",
+   "pastWork": [
+     {
+       "company": "Lavda Intern",
+       "position": "Web Developer Intern",
+       "years": "July 2024 - August 2024"
+     },
+     {
+       "company": "Open Source",
+       "position": "Contributor",
+       "years": "2024 - Present"
+     }
+   ],
+   "education": [
+     {
+       "school": "Delhi University (School of Open Learning)",
+       "degree": "B.A.",
+       "fieldOfStudy": "Humanities"
+     },
+     {
+       "school": "Self Learning",
+       "degree": "Full Stack Development (MERN Stack, SQL, Bootstrap, Tailwind)",
+       "fieldOfStudy": "Computer Science"
+     }
+   ]
+ }
+
+###
+
+### GET ALL USERS
+GET http://localhost:9090/user/get_all_users
+
