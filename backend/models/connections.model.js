@@ -1,5 +1,5 @@
-import mongoose, { Connection, connection, Schema } from "mongoose";
-
+import mongoose, {  Schema } from "mongoose";
+// Connection, connection,
 const connectionRequest = new Schema({
     userId:{
         type:Schema.Types.ObjectId,

@@ -3,10 +3,10 @@ POST http://localhost:9090/register
 Content-Type: application/json
 
 {
-  "username": "rahul",
+  "username": "harsh2",
   "password": "123456",
-  "email": "r@gmail.com",
-  "name": "rahul"
+  "email": "h2@gmail.com",
+  "name": "harsh"
 }
 
 ###
@@ -16,7 +16,7 @@ POST http://localhost:9090/login
 Content-Type: application/json
 
 {
-  "email": "r@gmail.com",
+  "email": "h2@gmail.com",
   "password": "123456"
 }
 
@@ -27,7 +27,7 @@ GET http://localhost:9090/get_user_and_profile
 Content-Type: application/json
 
 {
-"token":  "17880a8d17c4eef446b4f592bc4698ee531cab07a11c59a3d704cf281428b49f"
+"token":  "b99f4efb3021e63465145656f71a70c4c983cadd1dc453b1ce552581613405fe"
 }
 
 ###
@@ -37,8 +37,8 @@ POST http://localhost:9090/user_update
 Content-Type: application/json
 
 {
-  "token":
-  "bio": "Full Stack Developer",
+  "token":"a8d03d40019aa5ba2ec5a15f073112633cfc3fe94299847d2ff05809e7f8bd4d",
+  "bio": "Data Scientist",
   "currentPost": "Intern at Oasis Infobyte"
 }
 
@@ -51,12 +51,12 @@ POST http://localhost:9090/update_profile_data
 Content-Type: application/json
 
 {
-   "token": "17880a8d17c4eef446b4f592bc4698ee531cab07a11c59a3d704cf281428b49f",
-   "bio": "Full Stack Developer | MERN • SQL • JavaScript • Open Source Enthusiast",
-   "currentPost": "Full Stack Developer Intern at Oasis Infobyte",
+   "token": "a8d03d40019aa5ba2ec5a15f073112633cfc3fe94299847d2ff05809e7f8bd4d",
+   "bio": "Java Full Stack Developer | MERN • SQL • JavaScript • Open Source Enthusiast",
+   "currentPost": "Data Scientist Intern at Oasis Infobyte",
    "pastWork": [
      {
-       "company": "Lavda Intern",
+       "company": "Microsoft Intern",
        "position": "Web Developer Intern",
        "years": "July 2024 - August 2024"
      },
